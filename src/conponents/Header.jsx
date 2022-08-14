@@ -8,7 +8,7 @@ const Header = () => {
 
     const [open, setOpen] = useState(true);
     const toggle = () => { setOpen(!open) };
-    const isOpen = () => { setOpen(open) };
+    const isOpen = () => { setOpen(open) }; //これをHomePage.jsxで利用したい
 
     return (
         <header>
