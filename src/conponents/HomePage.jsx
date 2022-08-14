@@ -1,11 +1,12 @@
 import React from 'react'
 import { Button } from 'react-bootstrap';
-import { isOpen } from './Header';
 
-const HomePage = () => {
+const HomePage = ({
+    open = false
+}) => {
     return (
         /* ここにHeaderで使ったisOpenを使って、Headerのopenとcloseを切り替えたい。 */
-        <div className={isOpen ? open : close}>
+        <div className={open ? "open" : "close"}>
             <Button>Button</Button>
         </div>
     )
