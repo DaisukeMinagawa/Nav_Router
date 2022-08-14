@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+
+
 const Header = () => {
+
+    const [open, setOpen] = useState(true);
+    const toggle = () => { setOpen(!open) };
+    const isOpen = () => { setOpen(open) };
+
     return (
         <header>
+            <button onClick={toggle}>{open ? <FontAwesomeIcon icon={faBars} size="lg" /> : <FontAwesomeIcon icon={faXmark} size="lg" />}</button>
             <div className="logo">
                 <h3>Portfolio</h3>
             </div>

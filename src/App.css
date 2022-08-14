@@ -21,6 +21,14 @@ header .logo h3 {
 
 }
 
+.open {
+  display: contents;
+}
+
+.close {
+  display: none;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
