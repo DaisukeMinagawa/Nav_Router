@@ -8,12 +8,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 function App() {
+  const [open, setOpen] = useState(true);
+  const toggle = () => { setOpen(!open) };
 
   return (
     <div className="App">
-      <Header />
+      <Header
+        open={open}
+        toggle={toggle}
+      />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage open={open} />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

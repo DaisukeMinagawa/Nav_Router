@@ -4,12 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 
-const Header = () => {
-
-    const [open, setOpen] = useState(true);
-    const toggle = () => { setOpen(!open) };
-    const isOpen = () => { setOpen(open) }; //これをHomePage.jsxで利用したい
-
+const Header = ({
+    open = false,
+    toggle = f => f
+}) => {
     return (
         <header>
             <button onClick={toggle}>{open ? <FontAwesomeIcon icon={faBars} size="lg" /> : <FontAwesomeIcon icon={faXmark} size="lg" />}</button>
