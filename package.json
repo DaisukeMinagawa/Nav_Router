@@ -15,10 +15,15 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bootstrap": "^5.2.0",
+    "gatsby-plugin-typography": "^4.20.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
+    "react-burger-menu": "^3.0.8",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-typography": "^0.16.20",
+    "typography": "^0.16.21",
+    "typography-theme-fairy-gates": "^0.16.19"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
